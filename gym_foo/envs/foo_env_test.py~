@@ -1,0 +1,18 @@
+import gym
+import gym_foo
+env = gym.make('foo-v0')
+
+max_ep = 10
+for ep_count in range(max_ep):
+	step_cnt = 0
+	ep_reward = 0
+	done = False
+	state = env.reset()
+	
+	while not done:
+		next_state, reward, done, _ = env.step(env.action_space.sample())
+		step_cnt += 1
+		ep_reward = reward
+		state = next_state
+	
+	print('Episode: {}, step count: {}, episode reward: {}'. format(ep_cnt, step_cnt, ep_reward))	 
