@@ -1,1 +1,3 @@
-The environment foo-env or the class FooEnv is a modification of pendulum-v0 environment
+Gym environment with Casadi for Model Predictive Control of a nonliear system - Simple Inverted Pendulum
+The Goal is to apply control action such that the pendulum stays upright with theta = 0 (measured anti-clockwise)
+This environment is a modification of the gym environment with id Pendulum-v0
